@@ -21,6 +21,11 @@
 
 .wrapper {
     height: 100%;
+    display: none;
+}
+
+.wrapper.block {
+    display: block;
 }
 
 .img {

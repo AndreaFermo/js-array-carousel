@@ -10,7 +10,7 @@ const imageListDom = document.querySelector('.imageList');
 
 let sliderDom ='';
 
-for (let i = 1; i < imagesArray.length; i++) {
+for (let i = 0; i < imagesArray.length; i++) {
 
     const myImgWrapper = `<div class="wrapper">
                             <img class="img" src="${imagesArray[i]}" alt="">
@@ -20,3 +20,20 @@ for (let i = 1; i < imagesArray.length; i++) {
 }
 
 imageListDom.innerHTML = sliderDom;
+
+const wrapperDom = document.getElementsByClassName('wrapper');
+console.log(wrapperDom)
+
+let currentImage = 0;
+
+wrapperDom[currentImage].classList.add('block');
+
+const nextButton = document.querySelector('#next');
+const prevButton = document.querySelector('#prev');
+
+/*
+nextButton.addEventListener('click',
+    function() {
+        if
+    }
+); */
