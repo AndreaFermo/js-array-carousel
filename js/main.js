@@ -41,3 +41,13 @@ nextButton.addEventListener('click',
         }
     }
 ); 
+
+prevButton.addEventListener('click',
+    function() {
+        if (currentImage > 0) {
+            wrapperDom[currentImage].classList.remove('block');
+            currentImage--;
+            wrapperDom[currentImage].classList.add('block');
+        }
+    }
+); 
