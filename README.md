@@ -1,1 +1,1 @@
-# js-fizzbuzz
+# js-array-carousel
