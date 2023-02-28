@@ -31,9 +31,13 @@ wrapperDom[currentImage].classList.add('block');
 const nextButton = document.querySelector('#next');
 const prevButton = document.querySelector('#prev');
 
-/*
+
 nextButton.addEventListener('click',
     function() {
-        if
+        if (currentImage < wrapperDom.length - 1) {
+            wrapperDom[currentImage].classList.remove('block');
+            currentImage++;
+            wrapperDom[currentImage].classList.add('block');
+        }
     }
-); */
+); 
